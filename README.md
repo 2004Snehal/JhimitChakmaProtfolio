@@ -17,9 +17,9 @@ portfolio-website/
 │   │   │   ├── ContactSection.tsx  # Contact information
 │   │   │   ├── CVSection.tsx       # Resume/CV section
 │   │   │   ├── HeroSection.tsx     # Landing hero section
-│   │   │   ├── HodosSection.tsx    # Startup showcase
 │   │   │   ├── Navigation.tsx      # Header navigation
 │   │   │   ├── Portfolio.tsx       # Main portfolio container
+│   │   │   ├── PORSection.tsx      # Position of Responsibility section
 │   │   │   ├── ProjectsSection.tsx # Projects showcase
 │   │   │   ├── ThemeProvider.tsx   # Dark/light mode provider
 │   │   │   └── TimelineSection.tsx # Professional timeline
@@ -65,7 +65,7 @@ portfolio-website/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/portfolio-website.git
+   git clone https://github.com/jhimit-chakma/portfolio-website.git
    cd portfolio-website
    ```
 
@@ -88,16 +88,36 @@ portfolio-website/
 5. **Open in browser**
    Navigate to `http://localhost:5000`
 
+### Local Deployment Commands
+
+```bash
+# 1. Install all dependencies  
+npm install
+
+# 2. Build the project for production
+npm run build
+
+# 3. Preview the built project locally (usually at http://localhost:4173)
+npm run preview
+
+# 4. Open browser and navigate to the displayed URL
+```
+
+**Quick Local Deployment (One-liner):**
+```bash
+npm install && npm run build && npm run preview
+```
+
 ### Development Commands
 
 ```bash
-# Start development server
+# Start development server (usually at http://localhost:5000)
 npm run dev
 
 # Build for production
 npm run build
 
-# Preview production build
+# Preview production build locally
 npm run preview
 
 # Run type checking
@@ -105,6 +125,27 @@ npm run type-check
 
 # Format code
 npm run format
+```
+
+### Local Deployment Commands
+
+```bash
+# 1. Install all dependencies
+npm install
+
+# 2. Build the project for production
+npm run build
+
+# 3. Preview the built project locally
+npm run preview
+
+# 4. Open browser and navigate to the displayed URL (usually http://localhost:4173)
+```
+
+**Quick Local Deployment:**
+```bash
+# One-liner for fresh deployment
+npm install && npm run build && npm run preview
 ```
 
 ## 🌐 Deployment Options
@@ -283,9 +324,9 @@ Update personal details in:
 - `client/src/components/ContactSection.tsx` - Contact information
 
 #### Professional Experience
-- `client/src/components/TimelineSection.tsx` - Career timeline
-- `client/src/components/HodosSection.tsx` - Startup experience
-- `client/src/components/ProjectsSection.tsx` - Portfolio projects
+- `client/src/components/TimelineSection.tsx` - Internship timeline
+- `client/src/components/PORSection.tsx` - Leadership positions
+- `client/src/components/ProjectsSection.tsx` - Financial analysis projects
 
 #### Resume/CV
 - `client/src/components/CVSection.tsx` - Update Google Drive link
@@ -375,9 +416,9 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 For questions or support:
-- **Email**: palsnehal004@gmail.com
-- **LinkedIn**: [snehal-pal-4735b4266](https://linkedin.com/in/snehal-pal-4735b4266)
-- **GitHub**: [2004Snehal](https://github.com/2004Snehal)
+- **Email**: jhimit.chakma@kgpian.iitkgp.ac.in
+- **LinkedIn**: [jhimit-chakma](https://linkedin.com/in/jhimit-chakma)
+- **GitHub**: [jhimit-chakma](https://github.com/jhimit-chakma)
 
 ---
 

@@ -9,8 +9,8 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Passionate about building technology that creates real impact, combining entrepreneurship, 
-            AI research, and product development to solve complex problems.
+            Strategic financial analyst and CFA Level 1 candidate with proven leadership experience 
+            across financial modeling, equity research, and market analysis for sustainable growth.
           </p>
         </div>
         
@@ -19,13 +19,13 @@ export default function AboutSection() {
             <div>
               <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                I'm a tech entrepreneur and AI researcher currently pursuing B.Tech in Chemical Engineering 
-                at IIT Kharagpur. My passion lies at the intersection of technology, business, and innovation.
+                I'm a strategic financial analyst and CFA Level 1 candidate currently pursuing B.Tech in Electrical Engineering 
+                at IIT Kharagpur. My expertise lies at the intersection of financial modeling, equity research, and data-driven investment analysis.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                As the former Co-Founder and COO of Hodos, I led the development of a corporate travel 
-                expense management platform that automated complex financial workflows for enterprise clients. 
-                My research focuses on AI applications in data science and machine learning.
+                Through multiple internships at leading financial institutions like Elara Capital, India Accelerator, and Oister Global, 
+                I've developed deep expertise in valuation methodologies, market research, and portfolio analysis. My proven leadership skills, 
+                verified through multiple positions of responsibility, enable me to drive teams toward data-driven financial solutions.
               </p>
             </div>
             
@@ -38,9 +38,9 @@ export default function AboutSection() {
                   <h4 className="font-semibold text-lg mb-2">Education</h4>
                   <div className="space-y-2">
                     <div>
-                      <p className="font-medium">B.Tech, Chemical Engineering</p>
+                      <p className="font-medium">B.Tech (Hons.), Electrical Engineering</p>
                       <p className="text-muted-foreground">Indian Institute of Technology Kharagpur</p>
-                      <p className="text-sm text-muted-foreground">2023 - 2027 </p>
+                      <p className="text-sm text-muted-foreground">2023 - 2027 • CGPA: 7.93/10</p>
                     </div>
                   </div>
                 </div>
@@ -55,7 +55,8 @@ export default function AboutSection() {
                 <div>
                   <h4 className="font-semibold text-lg mb-2">Academic Excellence</h4>
                   <p className="text-muted-foreground">
-                    Ranked among top 1% in the country in JEE Advanced 2023, securing a seat in IIT Kharagpur.
+                    NTSE Scholar awarded by the Government of India with a selection rate of 0.3%. 
+                    Secured top 1% ranking in JEE Advanced 2023 for admission to IIT Kharagpur.
                   </p>
                 </div>
               </div>

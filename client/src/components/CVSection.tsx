@@ -6,7 +6,7 @@ export default function CVSection() {
   const openGoogleDriveCV = () => {
     //todo: replace with actual Google Drive link
     console.log('Opening CV from Google Drive');
-    window.open('https://drive.google.com/drive/folders/1NgWxgX4_aqREwa1f92m1Jmgd-SprJUI3?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/drive/folders/1c03am9CkCHSy4_JCwyZufbSwzKnbSMg0?usp=sharing', '_blank');
   };
 
   return (
@@ -39,15 +39,15 @@ export default function CVSection() {
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-border/50">
                   <span className="text-muted-foreground">Experience</span>
-                  <span className="font-medium">Startup & Research</span>
+                  <span className="font-medium">Finance & Consultancy</span>
                 </div>
                 <div className="flex justify-between items-center py-2 border-b border-border/50">
                   <span className="text-muted-foreground">Skills</span>
-                  <span className="font-medium">AI, Product, Business</span>
+                  <span className="font-medium">Finance, Product, Business</span>
                 </div>
                 <div className="flex justify-between items-center py-2">
                   <span className="text-muted-foreground">Languages</span>
-                  <span className="font-medium">English, Hindi, Bengali</span>
+                  <span className="font-medium">English, Hindi, Chakma, Bengali</span>
                 </div>
               </div>
               
@@ -97,9 +97,9 @@ export default function CVSection() {
                 Interested in collaborating or learning more about my work?
               </p>
               <div className="text-sm space-y-1">
-                <p><strong>Email:</strong> palsnehal004@gmail.com</p>
-                <p><strong>LinkedIn:</strong> snehal-pal-4735b4266</p>
-                <p><strong>GitHub:</strong> 2004Snehal</p>
+                <p><strong>Email:</strong> jhimitchakma.iitkgp@gmail.com</p>
+                <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/jhimit-chakma-iitkgp/</p>
+                
               </div>
             </Card>
           </div>

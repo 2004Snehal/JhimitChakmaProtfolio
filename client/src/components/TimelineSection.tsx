@@ -18,62 +18,44 @@ export default function TimelineSection() {
   const timelineData: TimelineItem[] = [
     {
       id: "1",
-      title: "Product Analyst Intern",
-      organization: "Purplle",
-      period: "Summer 2026",
+      title: "Research Analyst",
+      organization: "Elara Capital",
+      period: "Feb'25 - Apr'25",
+      location: "Mumbai, India", 
+      description: "Decoded trends in Fiscal and Revenue Deficit and assessed State Budgets of West Bengal, Uttar Pradesh, Jharkhand, Odisha. Analysed Bid to Cover ratio and Max-Min spread for all 28 Indian States from auction results of State Government Securities.",
+      type: "internship"
+    },
+    {
+      id: "2",
+      title: "Financial Analyst", 
+      organization: "India Accelerator",
+      period: "Oct'24 - Nov'24",
+      location: "Gurugram, India",
+      description: "Analysed unit economics (COGS structure, contribution margin, cost absorption) for GREST; LTV:CAC, churn-adjusted retention for STAGE. Identified EBITDA-CFO divergence via working capital investment and benchmarked unit-level ROIC proxies, burn rate vs industry peers.",
+      type: "internship"
+    },
+    {
+      id: "3", 
+      title: "Financial Analyst",
+      organization: "Oister Global", 
+      period: "Sep'24 - Oct'24",
       location: "Mumbai, India",
-      description: "Upcoming product analytics internship focusing on data-driven product insights and user experience optimization.",
-      type: "internship",
-      isUpcoming: true
-    },
-    {
-      id: "2", 
-      title: "Research Intern",
-      organization: "Center of Excellence in AI, AI Department, IIT Kharagpur",
-      period: "Jan 2025 - Mar 2025",
-      location: "Kharagpur, India",
-      description: "Applied advanced AI algorithms including Transformers and GNNs for land use classification using satellite imagery, achieving 68% accuracy in PolSAR classification.",
-      type: "research"
-    },
-    {
-      id: "3",
-      title: "Winter Research Intern", 
-      organization: "Aalborg University",
-      period: "Dec 2024 - Jan 2025",
-      location: "Aalborg, Denmark",
-      description: "Co-developed a scalable name-matching system implementing MFI-blocking algorithms for the MEHDIE project, evaluating multiple blocking strategies for enterprise-scale applications.",
-      type: "research"
-    },
-    {
-      id: "4",
-      title: "Co-Founder & COO",
-      organization: "Hodos",
-      period: "Jan 2025 - June 2025", 
-      location: "India",
-      description: "Built corporate travel expense management platform with booking APIs, account aggregation, and ERP solutions. Led GTM strategy and business development initiatives with VC discussions.",
-      type: "startup"
+      description: "Analyzed Pre-IPO vs Post-IPO valuations of Nykaa, FirstCry, Zomato, Delhivery, Paytm, Urban Co., identifying key patterns in ROI. Interpreted investing data from funding history for Series A,B,C,D funding, correlating with IPO Subscription rates and EBITDA.",
+      type: "internship"
     }
   ];
 
   const getIcon = (type: string) => {
     switch (type) {
-      case 'startup':
-        return <Building2 className="h-5 w-5" />;
-      case 'research':
-        return <GraduationCap className="h-5 w-5" />;
       case 'internship':
         return <Building2 className="h-5 w-5" />;
       default:
-        return <Calendar className="h-5 w-5" />;
+        return <Building2 className="h-5 w-5" />;
     }
   };
 
   const getTypeColor = (type: string) => {
     switch (type) {
-      case 'startup':
-        return 'bg-primary text-primary-foreground';
-      case 'research':
-        return 'bg-chart-1 text-primary-foreground';
       case 'internship':
         return 'bg-chart-2 text-primary-foreground';
       default:
@@ -85,9 +67,9 @@ export default function TimelineSection() {
     <section id="timeline" className="py-24">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Career Timeline</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4">Professional Experience</h2>
           <p className="text-lg text-muted-foreground">
-            My journey through entrepreneurship, research, and product development
+            Building expertise through strategic internships in financial analysis and market research
           </p>
         </div>
 
@@ -99,30 +81,19 @@ export default function TimelineSection() {
             {timelineData.map((item, index) => (
               <div key={item.id} className="relative flex gap-8 items-start">
                 {/* Timeline dot */}
-                <div className={`flex-shrink-0 w-16 h-16 rounded-full border-4 border-background flex items-center justify-center z-10 ${
-                  item.isUpcoming ? 'bg-muted text-muted-foreground' : 'bg-primary text-primary-foreground'
-                }`}>
+                <div className="flex-shrink-0 w-16 h-16 rounded-full bg-primary text-primary-foreground border-4 border-background flex items-center justify-center z-10">
                   {getIcon(item.type)}
                 </div>
                 
                 {/* Content card */}
-                <Card className={`flex-1 p-6 hover-elevate transition-all duration-300 ${
-                  item.isUpcoming ? 'border-dashed' : ''
-                }`} data-testid={`timeline-item-${item.id}`}>
+                <Card className="flex-1 p-6 hover-elevate transition-all duration-300" data-testid={`timeline-item-${item.id}`}>
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
                     <div>
-                      <h3 className="text-xl font-semibold mb-2">
-                        {item.title}
-                        {item.isUpcoming && (
-                          <Badge variant="secondary" className="ml-2">
-                            Upcoming
-                          </Badge>
-                        )}
-                      </h3>
+                      <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                       <p className="text-primary font-medium">{item.organization}</p>
                     </div>
                     <Badge className={getTypeColor(item.type)}>
-                      {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
+                      Internship
                     </Badge>
                   </div>
                   

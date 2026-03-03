@@ -34,7 +34,7 @@ export default function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-sm bg-background/80 border-b">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="font-bold text-xl">Snehal Pal</div>
+          <div className="font-bold text-xl">Jhimit Chakma</div>
           <div className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('about')}
@@ -48,7 +48,7 @@ export default function Navigation() {
               className="text-muted-foreground hover:text-foreground transition-colors"
               data-testid="nav-timeline"
             >
-              Timeline
+              Experience
             </button>
             <button
               onClick={() => scrollToSection('projects')}
@@ -56,6 +56,13 @@ export default function Navigation() {
               data-testid="nav-projects"
             >
               Projects
+            </button>
+            <button
+              onClick={() => scrollToSection('por')}
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              data-testid="nav-por"
+            >
+              Leadership
             </button>
             <button
               onClick={() => scrollToSection('achievements')}

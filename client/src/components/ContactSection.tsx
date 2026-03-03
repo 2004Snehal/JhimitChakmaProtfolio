@@ -3,18 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
-import { useState, useEffect } from "react";
+import { Mail, Linkedin, MapPin, Phone, ExternalLink } from "lucide-react";
+import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import jhimitImage from "@assets/jhimit.jpeg";
 
 export default function ContactSection() {
-  const [calendlyUrl, setCalendlyUrl] = useState("");
-
-  useEffect(() => {
-    const now = new Date();
-    const formattedDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}`;
-    setCalendlyUrl(`https://calendly.com/palsnehal004/30min?month=${formattedDate}`);
-  }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -54,7 +48,7 @@ export default function ContactSection() {
   };
 
   const openEmail = () => {
-    window.open('mailto:palsnehal004@gmail.com', '_blank');
+    window.open('mailto:jhimitchakma.iitkgp@gmail.com', '_blank');
   };
 
   return (
@@ -63,7 +57,7 @@ export default function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">Let's Connect</h2>
           <p className="text-lg text-muted-foreground">
-            Interested in collaboration, opportunities, or just want to chat about tech and entrepreneurship?
+            Interested in financial consulting, investment analysis, or strategic advisory services?
           </p>
         </div>
 
@@ -79,14 +73,14 @@ export default function ContactSection() {
                     </div>
                     <div>
                       <h4 className="font-semibold">Email</h4>
-                      <p className="text-muted-foreground">palsnehal004@gmail.com</p>
+                      <p className="text-muted-foreground">jhimitchakma.iitkgp@gmail.com</p>
                     </div>
                   </div>
                 </Card>
                 
                 <Card 
                   className="p-6 hover-elevate cursor-pointer" 
-                  onClick={() => openLink('https://www.linkedin.com/in/snehal-pal-4735b4266/')}
+                  onClick={() => openLink('https://www.linkedin.com/in/jhimit-chakma-iitkgp/')}
                   data-testid="contact-linkedin"
                 >
                   <div className="flex items-center gap-4">
@@ -99,61 +93,68 @@ export default function ContactSection() {
                     </div>
                   </div>
                 </Card>
-                
-                <Card 
-                  className="p-6 hover-elevate cursor-pointer" 
-                  onClick={() => openLink('https://github.com/2004Snehal')}
-                  data-testid="contact-github"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="p-3 bg-primary/10 rounded-lg">
-                      <Github className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold">GitHub</h4>
-                      <p className="text-muted-foreground">View my code and projects</p>
-                    </div>
-                  </div>
-                </Card>
               </div>
             </div>
             
             <div>
-              <h4 className="font-semibold text-lg mb-4">What I'm Looking For</h4>
+              <h4 className="font-semibold text-lg mb-4">Services & Expertise</h4>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span>Product management and analytics opportunities</span>
+                  <span>Financial modeling and valuation services</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span>AI research collaborations and projects</span>
+                  <span>Equity research and investment analysis</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span>Startup mentorship and entrepreneurship discussions</span>
+                  <span>M&A advisory and strategic consulting</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
-                  <span>Speaking opportunities at tech events</span>
+                  <span>Market research and data analytics</span>
                 </li>
               </ul>
             </div>
           </div>
-          
-          <Card className="p-8">
-            <h3 className="text-2xl font-semibold mb-6">Schedule a Meeting</h3>
-            <div className="w-full">
-              <iframe
-                src={calendlyUrl}
-                width="100%"
-                height="700px"
-                frameBorder="0"
-                title="Schedule a meeting"
-                data-testid="calendly-embed"
-              ></iframe>
-            </div>
-          </Card>
+
+          <div className="flex justify-center lg:justify-end">
+            <Card 
+              className="p-8 hover-elevate cursor-pointer transition-all duration-300 max-w-sm"
+              onClick={() => openLink('https://www.linkedin.com/in/jhimit-chakma-iitkgp/')}
+              data-testid="linkedin-profile-card"
+            >
+              <div className="text-center space-y-6">
+                <div className="relative">
+                  <img
+                    src={jhimitImage}
+                    alt="Jhimit Chakma"
+                    className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-primary/20"
+                  />
+                  <div className="absolute -bottom-2 -right-2 bg-blue-600 text-white p-2 rounded-full">
+                    <Linkedin className="h-4 w-4" />
+                  </div>
+                </div>
+                
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Jhimit Chakma</h3>
+                  <p className="text-muted-foreground text-sm mb-1">
+                    Financial Analyst | CFA L1 Candidate
+                  </p>
+                  <p className="text-muted-foreground text-sm">
+                    IIT Kharagpur | 500+ connections
+                  </p>
+                </div>
+                
+                <Button className="w-full gap-2">
+                  <Linkedin className="h-4 w-4" />
+                  View LinkedIn Profile
+                  <ExternalLink className="h-3 w-3" />
+                </Button>
+              </div>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

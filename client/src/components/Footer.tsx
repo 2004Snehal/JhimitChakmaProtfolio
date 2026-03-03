@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
@@ -20,15 +20,7 @@ export default function Footer() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => openLink('https://github.com/2004Snehal')}
-              data-testid="footer-github"
-            >
-              <Github className="h-5 w-5" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => openLink('https://www.linkedin.com/in/snehal-pal-4735b4266/')}
+              onClick={() => openLink('https://www.linkedin.com/in/jhimit-chakma-iitkgp/')}
               data-testid="footer-linkedin"
             >
               <Linkedin className="h-5 w-5" />
@@ -36,7 +28,7 @@ export default function Footer() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => openLink('mailto:palsnehal004@gmail.com')}
+              onClick={() => openLink('mailto:jhimitchakma.iitkgp@gmail.com')}
               data-testid="footer-email"
             >
               <Mail className="h-5 w-5" />
@@ -49,13 +41,13 @@ export default function Footer() {
               className="font-bold text-xl hover:text-primary transition-colors"
               data-testid="footer-name"
             >
-              Snehal Pal
+              Jhimit Chakma
             </button>
-            <p className="text-muted-foreground">Entrepreneur | Product | AI</p>
+            <p className="text-muted-foreground">Financial Analyst | CFA L1 Candidate | Consultant</p>
           </div>
           
           <div className="text-center text-sm text-muted-foreground">
-            <p>© {currentYear} Snehal Pal. Built with passion for innovation.</p>
+            <p>© {currentYear} Jhimit Chakma. Strategic financial consulting with passion for excellence.</p>
           </div>
         </div>
       </div>

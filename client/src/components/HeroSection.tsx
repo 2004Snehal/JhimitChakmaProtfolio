@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import profileImage from "@assets/snehal_photo.jpg";
+import { ArrowDown, Linkedin, Mail } from "lucide-react";
+import profileImage from "@assets/jhimit.jpeg";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -24,17 +24,17 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl lg:text-6xl font-bold tracking-tight mb-4">
-                Snehal Pal
+                Jhimit Chakma
               </h1>
               <div className="text-xl lg:text-2xl text-muted-foreground font-light">
-                <span className="text-primary">Entrepreneur</span> |{' '}
-                <span className="text-primary">Product</span> |{' '}
-                <span className="text-primary">AI</span>
+                <span className="text-primary">Financial Analyst</span> |{' '}
+                <span className="text-primary">CFA L1 Candidate</span> |{' '}
+                <span className="text-primary">Consultancy</span>
               </div>
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed max-w-md">
-              Passionate entrepreneur, AI researcher, product enthusiast.
+              Strategic financial analyst and consultant with expertise in equity valuation, market analysis, and data-driven insights.
             </p>
             
             <div className="flex flex-wrap gap-4">
@@ -60,15 +60,7 @@ export default function HeroSection() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => openLink('https://github.com/2004Snehal')}
-                data-testid="link-github"
-              >
-                <Github className="h-5 w-5" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => openLink('https://www.linkedin.com/in/snehal-pal-4735b4266/')}
+                onClick={() => openLink('https://www.linkedin.com/in/jhimit-chakma-iitkgp/')}
                 data-testid="link-linkedin"
               >
                 <Linkedin className="h-5 w-5" />
@@ -76,7 +68,7 @@ export default function HeroSection() {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => openLink('mailto:palsnehal004@gmail.com')}
+                onClick={() => openLink('mailto:jhimitchakma.iitkgp@gmail.com')}
                 data-testid="link-email"
               >
                 <Mail className="h-5 w-5" />
@@ -89,7 +81,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl"></div>
               <img
                 src={profileImage}
-                alt="Snehal Pal"
+                alt="Jhimit Chakma"
                 className="relative w-80 h-80 object-cover rounded-full border-4 border-card shadow-2xl"
                 data-testid="img-profile"
               />

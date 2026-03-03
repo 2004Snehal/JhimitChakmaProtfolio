@@ -3,8 +3,8 @@ import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import TimelineSection from "./TimelineSection";
-import HodosSection from "./HodosSection";
 import ProjectsSection from "./ProjectsSection";
+import PORSection from "./PORSection";
 import AchievementsSection from "./AchievementsSection";
 import CVSection from "./CVSection";
 import ContactSection from "./ContactSection";
@@ -28,8 +28,8 @@ export default function Portfolio() {
         <HeroSection />
         <AboutSection />
         <TimelineSection />
-        <HodosSection />
         <ProjectsSection />
+        <PORSection />
         <AchievementsSection />
         <CVSection />
         <ContactSection />

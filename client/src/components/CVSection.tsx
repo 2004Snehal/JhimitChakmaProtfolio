@@ -74,15 +74,15 @@ export default function CVSection() {
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Hodos startup experience and achievements</span>
+                  <span className="text-muted-foreground">Experience and achievements</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Research internships and projects</span>
+                  <span className="text-muted-foreground">Internships and projects</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  <span className="text-muted-foreground">Technical skills and competencies</span>
+                  <span className="text-muted-foreground">Skills and competencies</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-primary rounded-full"></div>
